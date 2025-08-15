@@ -40,7 +40,7 @@ namespace zander
         {
 
 
-            DelProgram =  new DelegateText(GetProgram);
+            DelProgram = new DelegateText(GetProgram);
             DelLastName = new DelegateText(GetLastName);
             DelFirstName = new DelegateText(GetFirstName);
             DelMiddleName = new DelegateText(GetMiddleName);
