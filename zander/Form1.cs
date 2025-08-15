@@ -24,6 +24,13 @@ namespace zander
         public FrmRegistration()
         {
             InitializeComponent();
+
+
+            comboBoxProg.Items.Add("BSIS");
+            comboBoxProg.Items.Add("BSIT");
+            comboBoxProg.Items.Add("BSED");
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
