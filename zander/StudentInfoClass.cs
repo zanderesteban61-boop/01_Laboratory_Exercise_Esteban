@@ -7,9 +7,6 @@ using System.Threading.Tasks;
 namespace zander
 {
 
-    public delegate long DelegateNumber(long number);
-
-    public delegate string DelegateText(string txt);
 
     internal class StudentInfoClass
     {
