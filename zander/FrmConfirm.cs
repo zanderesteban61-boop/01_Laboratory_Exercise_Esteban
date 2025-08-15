@@ -27,7 +27,8 @@ namespace zander
 
         private void FrmConfirm_Load_1(object sender, EventArgs e)
         {
-
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
 
         public FrmConfirm()

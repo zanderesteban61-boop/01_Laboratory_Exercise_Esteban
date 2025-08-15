@@ -88,7 +88,33 @@ namespace zander
             StudentInfoClass.ContactNo = Convert.ToInt64(txtboxContact.Text);
             StudentInfoClass.StudentNo = Convert.ToInt64(txtboxStud.Text);
 
+            FrmConfirm confirmForm = new FrmConfirm();
+
+              if (confirmForm.ShowDialog() == DialogResult.OK)
+
+            confirmForm.ShowDialog();
+
+
+            if (confirmForm.ShowDialog() == DialogResult.OK) ;
+
+
+            {
+
+                txtboxFirst.Clear();
+                txtboxFirst.Clear();
+                txtboxMiddle.Clear();
+                txtboxAddress.Clear();
+                comboBoxProg.SelectedIndex = -1;
+                txtboxAge.Clear();
+                txtboxContact.Clear();
+                txtboxStud.Clear();
+
+
+
+
+            }
         }
+
 
         private void txtboxStud_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
