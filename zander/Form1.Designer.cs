@@ -1,6 +1,6 @@
 ﻿namespace zander
 {
-    partial class Form1
+    partial class FrmRegistration
     {
         /// <summary>
         /// Required designer variable.
@@ -28,212 +28,248 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistration));
+            this.Student = new System.Windows.Forms.Label();
+            this.Program = new System.Windows.Forms.Label();
+            this.labelContact = new System.Windows.Forms.Label();
+            this.labelAge = new System.Windows.Forms.Label();
+            this.MiddleName = new System.Windows.Forms.Label();
+            this.FirstName = new System.Windows.Forms.Label();
+            this.LastName = new System.Windows.Forms.Label();
+            this.labelAddress = new System.Windows.Forms.Label();
+            this.txtboxStud = new System.Windows.Forms.MaskedTextBox();
+            this.txtboxLast = new System.Windows.Forms.TextBox();
+            this.txtboxContact = new System.Windows.Forms.TextBox();
+            this.txtboxAddress = new System.Windows.Forms.TextBox();
+            this.txtboxFirst = new System.Windows.Forms.TextBox();
+            this.txtboxMiddle = new System.Windows.Forms.TextBox();
+            this.txtboxAge = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.comboBoxProg = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // label1
+            // Student
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Miriam CLM", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label1.Location = new System.Drawing.Point(42, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 23);
-            this.label1.TabIndex = 0;
-            this.label1.Text = " Student No. : ";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.Student.AutoSize = true;
+            this.Student.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Student.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Student.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.Student.Location = new System.Drawing.Point(49, 71);
+            this.Student.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Student.Name = "Student";
+            this.Student.Size = new System.Drawing.Size(166, 27);
+            this.Student.TabIndex = 0;
+            this.Student.Text = " Student No. : ";
+            this.Student.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.Student.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // Program
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Miriam CLM", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label2.Location = new System.Drawing.Point(425, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(122, 23);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "PROGRAM :";
+            this.Program.AutoSize = true;
+            this.Program.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.Program.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.Program.Location = new System.Drawing.Point(496, 71);
+            this.Program.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.Program.Name = "Program";
+            this.Program.Size = new System.Drawing.Size(143, 27);
+            this.Program.TabIndex = 1;
+            this.Program.Text = "PROGRAM :";
             // 
-            // label3
+            // labelContact
             // 
-            this.label3.AutoSize = true;
-            this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label3.Font = new System.Drawing.Font("Miriam CLM", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label3.Location = new System.Drawing.Point(261, 328);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(130, 23);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Contact No. :";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.labelContact.AutoSize = true;
+            this.labelContact.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.labelContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelContact.Location = new System.Drawing.Point(487, 328);
+            this.labelContact.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelContact.Name = "labelContact";
+            this.labelContact.Size = new System.Drawing.Size(150, 25);
+            this.labelContact.TabIndex = 2;
+            this.labelContact.Text = "Contact No. :";
+            this.labelContact.Click += new System.EventHandler(this.label3_Click);
             // 
-            // label4
+            // labelAge
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Miriam CLM", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label4.Location = new System.Drawing.Point(42, 328);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 23);
-            this.label4.TabIndex = 3;
-            this.label4.Text = " Age :";
+            this.labelAge.AutoSize = true;
+            this.labelAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelAge.Location = new System.Drawing.Point(49, 318);
+            this.labelAge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAge.Name = "labelAge";
+            this.labelAge.Size = new System.Drawing.Size(74, 25);
+            this.labelAge.TabIndex = 5;
+            this.labelAge.Text = " Age :";
             // 
-            // label5
+            // MiddleName
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Miriam CLM", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label5.Location = new System.Drawing.Point(514, 190);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(127, 23);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Middle Name";
+            this.MiddleName.AutoSize = true;
+            this.MiddleName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MiddleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.MiddleName.Location = new System.Drawing.Point(610, 212);
+            this.MiddleName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.MiddleName.Name = "MiddleName";
+            this.MiddleName.Size = new System.Drawing.Size(151, 27);
+            this.MiddleName.TabIndex = 4;
+            this.MiddleName.Text = "Middle Name";
             // 
-            // label6
+            // FirstName
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Miriam CLM", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label6.Location = new System.Drawing.Point(266, 190);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(125, 23);
-            this.label6.TabIndex = 5;
-            this.label6.Text = " First Name ";
+            this.FirstName.AutoSize = true;
+            this.FirstName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.FirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.FirstName.Location = new System.Drawing.Point(304, 212);
+            this.FirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.FirstName.Name = "FirstName";
+            this.FirstName.Size = new System.Drawing.Size(142, 27);
+            this.FirstName.TabIndex = 5;
+            this.FirstName.Text = " First Name ";
             // 
-            // label7
+            // LastName
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Miriam CLM", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label7.Location = new System.Drawing.Point(36, 190);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 23);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Last Name";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
+            this.LastName.AutoSize = true;
+            this.LastName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.LastName.Location = new System.Drawing.Point(43, 212);
+            this.LastName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LastName.Name = "LastName";
+            this.LastName.Size = new System.Drawing.Size(126, 27);
+            this.LastName.TabIndex = 6;
+            this.LastName.Text = "Last Name";
+            this.LastName.Click += new System.EventHandler(this.label7_Click);
             // 
-            // label8
+            // labelAddress
             // 
-            this.label8.AutoSize = true;
-            this.label8.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label8.Font = new System.Drawing.Font("Miriam CLM", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.label8.Location = new System.Drawing.Point(33, 411);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(83, 23);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Address";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
+            this.labelAddress.AutoSize = true;
+            this.labelAddress.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelAddress.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.labelAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelAddress.Location = new System.Drawing.Point(49, 449);
+            this.labelAddress.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelAddress.Name = "labelAddress";
+            this.labelAddress.Size = new System.Drawing.Size(100, 27);
+            this.labelAddress.TabIndex = 7;
+            this.labelAddress.Text = "Address";
+            this.labelAddress.Click += new System.EventHandler(this.label8_Click);
             // 
-            // maskedTextBox1
+            // txtboxStud
             // 
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox1.Location = new System.Drawing.Point(37, 113);
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(300, 20);
-            this.maskedTextBox1.TabIndex = 8;
+            this.txtboxStud.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtboxStud.Location = new System.Drawing.Point(43, 113);
+            this.txtboxStud.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtboxStud.Name = "txtboxStud";
+            this.txtboxStud.Size = new System.Drawing.Size(350, 20);
+            this.txtboxStud.TabIndex = 8;
             // 
-            // textBox1
+            // txtboxLast
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(419, 113);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(372, 20);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtboxLast.Location = new System.Drawing.Point(43, 251);
+            this.txtboxLast.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtboxLast.Name = "txtboxLast";
+            this.txtboxLast.Size = new System.Drawing.Size(209, 20);
+            this.txtboxLast.TabIndex = 10;
             // 
-            // textBox2
+            // txtboxContact
             // 
-            this.textBox2.Location = new System.Drawing.Point(37, 234);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(180, 20);
-            this.textBox2.TabIndex = 10;
+            this.txtboxContact.Location = new System.Drawing.Point(489, 362);
+            this.txtboxContact.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtboxContact.Name = "txtboxContact";
+            this.txtboxContact.Size = new System.Drawing.Size(251, 20);
+            this.txtboxContact.TabIndex = 11;
             // 
-            // textBox3
+            // txtboxAddress
             // 
-            this.textBox3.Location = new System.Drawing.Point(255, 362);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(216, 20);
-            this.textBox3.TabIndex = 11;
+            this.txtboxAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtboxAddress.Location = new System.Drawing.Point(43, 488);
+            this.txtboxAddress.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtboxAddress.MaximumSize = new System.Drawing.Size(1000, 230);
+            this.txtboxAddress.Multiline = true;
+            this.txtboxAddress.Name = "txtboxAddress";
+            this.txtboxAddress.Size = new System.Drawing.Size(848, 100);
+            this.txtboxAddress.TabIndex = 444;
+            this.txtboxAddress.TabStop = false;
+            this.txtboxAddress.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // textBox4
+            // txtboxFirst
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(25, 448);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(666, 116);
-            this.textBox4.TabIndex = 12;
-            this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.txtboxFirst.Location = new System.Drawing.Point(309, 251);
+            this.txtboxFirst.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtboxFirst.Name = "txtboxFirst";
+            this.txtboxFirst.Size = new System.Drawing.Size(230, 20);
+            this.txtboxFirst.TabIndex = 13;
             // 
-            // textBox5
+            // txtboxMiddle
             // 
-            this.textBox5.Location = new System.Drawing.Point(265, 234);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(198, 20);
-            this.textBox5.TabIndex = 13;
+            this.txtboxMiddle.Location = new System.Drawing.Point(605, 251);
+            this.txtboxMiddle.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtboxMiddle.Name = "txtboxMiddle";
+            this.txtboxMiddle.Size = new System.Drawing.Size(223, 20);
+            this.txtboxMiddle.TabIndex = 14;
             // 
-            // textBox6
+            // txtboxAge
             // 
-            this.textBox6.Location = new System.Drawing.Point(508, 234);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(192, 20);
-            this.textBox6.TabIndex = 14;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(40, 362);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 15;
+            this.txtboxAge.Location = new System.Drawing.Point(51, 362);
+            this.txtboxAge.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txtboxAge.Name = "txtboxAge";
+            this.txtboxAge.Size = new System.Drawing.Size(116, 20);
+            this.txtboxAge.TabIndex = 15;
             // 
             // button1
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.AppStarting;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(264, 585);
+            this.button1.Location = new System.Drawing.Point(359, 619);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(127, 34);
+            this.button1.Size = new System.Drawing.Size(148, 34);
             this.button1.TabIndex = 16;
             this.button1.Text = "Next ";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Form1
+            // comboBoxProg
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.comboBoxProg.FormattingEnabled = true;
+            this.comboBoxProg.Items.AddRange(new object[] {
+            "BSIT"});
+            this.comboBoxProg.Location = new System.Drawing.Point(492, 113);
+            this.comboBoxProg.Name = "comboBoxProg";
+            this.comboBoxProg.Size = new System.Drawing.Size(363, 21);
+            this.comboBoxProg.TabIndex = 446;
+            // 
+            // FrmRegistration
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SeaShell;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(816, 633);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(975, 698);
+            this.Controls.Add(this.comboBoxProg);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.maskedTextBox1);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Controls.Add(this.txtboxAge);
+            this.Controls.Add(this.txtboxMiddle);
+            this.Controls.Add(this.txtboxFirst);
+            this.Controls.Add(this.txtboxAddress);
+            this.Controls.Add(this.txtboxContact);
+            this.Controls.Add(this.txtboxLast);
+            this.Controls.Add(this.txtboxStud);
+            this.Controls.Add(this.labelAddress);
+            this.Controls.Add(this.LastName);
+            this.Controls.Add(this.FirstName);
+            this.Controls.Add(this.MiddleName);
+            this.Controls.Add(this.labelAge);
+            this.Controls.Add(this.labelContact);
+            this.Controls.Add(this.Program);
+            this.Controls.Add(this.Student);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.Name = "FrmRegistration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FrmConfirm";
+            this.TransparencyKey = System.Drawing.Color.Maroon;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -242,23 +278,23 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label Student;
+        private System.Windows.Forms.Label Program;
+        private System.Windows.Forms.Label labelContact;
+        private System.Windows.Forms.Label labelAge;
+        private System.Windows.Forms.Label MiddleName;
+        private System.Windows.Forms.Label FirstName;
+        private System.Windows.Forms.Label LastName;
+        private System.Windows.Forms.Label labelAddress;
+        private System.Windows.Forms.MaskedTextBox txtboxStud;
+        private System.Windows.Forms.TextBox txtboxLast;
+        private System.Windows.Forms.TextBox txtboxContact;
+        private System.Windows.Forms.TextBox txtboxAddress;
+        private System.Windows.Forms.TextBox txtboxFirst;
+        private System.Windows.Forms.TextBox txtboxMiddle;
+        private System.Windows.Forms.TextBox txtboxAge;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox comboBoxProg;
     }
 }
 

@@ -7,29 +7,41 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static zander.StudentInfoClass;
 
 namespace zander
 {
-    public partial class Form1 : Form
+    public partial class FrmRegistration : Form
     {
-        public Form1()
+
+       
+
+
+        public FrmRegistration()
         {
             InitializeComponent();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            // TEST
+          
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            
 
+        }
+
+        private void buttonSubmit_Click(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.OK;
+            Close();
         }
 
         private void label7_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -51,6 +63,11 @@ namespace zander
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+           
+            }
+        }
     }
-}
                                                                                                                                                                                                                                                                                                                                                                                                                    
