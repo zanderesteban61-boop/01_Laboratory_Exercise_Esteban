@@ -66,8 +66,33 @@ namespace zander
 
         private void button1_Click(object sender, EventArgs e)
         {
-           
-            }
+         
+
+            StudentInfoClass.FirstName = txtboxFirst.Text;
+            StudentInfoClass.LastName = txtboxLast.Text;
+            StudentInfoClass.MiddleName = txtboxMiddle.Text;
+            StudentInfoClass.Address = txtboxAddress.Text;
+            StudentInfoClass.Program = comboBoxProg.Text;
+            StudentInfoClass.Age = Convert.ToInt64(txtboxAge.Text);
+            StudentInfoClass.ContactNo = Convert.ToInt64(txtboxContact.Text);
+            StudentInfoClass.StudentNo = Convert.ToInt64(txtboxStud.Text);
+
         }
+
+        private void txtboxStud_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        {
+
+        }
+
+        private void FirstName_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtboxLast_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
     }
                                                                                                                                                                                                                                                                                                                                                                                                                    

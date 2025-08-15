@@ -122,6 +122,7 @@
             this.FirstName.Size = new System.Drawing.Size(142, 27);
             this.FirstName.TabIndex = 5;
             this.FirstName.Text = " First Name ";
+            this.FirstName.Click += new System.EventHandler(this.FirstName_Click);
             // 
             // LastName
             // 
@@ -158,6 +159,7 @@
             this.txtboxStud.Name = "txtboxStud";
             this.txtboxStud.Size = new System.Drawing.Size(350, 20);
             this.txtboxStud.TabIndex = 8;
+            this.txtboxStud.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.txtboxStud_MaskInputRejected);
             // 
             // txtboxLast
             // 
@@ -166,6 +168,7 @@
             this.txtboxLast.Name = "txtboxLast";
             this.txtboxLast.Size = new System.Drawing.Size(209, 20);
             this.txtboxLast.TabIndex = 10;
+            this.txtboxLast.TextChanged += new System.EventHandler(this.txtboxLast_TextChanged);
             // 
             // txtboxContact
             // 
