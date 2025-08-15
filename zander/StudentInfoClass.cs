@@ -4,9 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace zander
 {
 
+    public delegate long DelegateNumber(long number);
+
+    public delegate string DelegateText(string txt);
 
     internal class StudentInfoClass
     {
@@ -21,43 +25,47 @@ namespace zander
         public static long Age = 0;
         public static long ContactNo = 0;
         public static long StudentNo = 0;
+        
 
-        public static string GetFirstName()
+
+            
+
+        public static string GetFirstName(String FirstName)
         {
             return FirstName;
         }
 
-        public static string GetLastName()
+        public static string GetLastName(String LastName )
         {
             return LastName;
         }
 
-        public static string GetMiddleName()
+        public static string GetMiddleName(String MiddleName)
         {
             return MiddleName;
         }
 
-        public static string GetAddress()
+        public static string GetAddress(String Address)
         {
             return Address;
         }
 
-        public static string GetProgram()
+        public static string GetProgram(String Program)
         {
             return Program;
         }
 
-        public static long GetAge()
+        public static long GetAge(long Age)
         {
             return Age;
         }
 
-        public static long GetContactNo()
+        public static long GetContactNo(long ContactNo)
         {
             return ContactNo;
         }
 
-        public static long GetStudentNo()
+        public static long GetStudentNo(long StudentNo)
         {
             return StudentNo;
         }

@@ -13,8 +13,12 @@ namespace zander
 {
     public partial class FrmRegistration : Form
     {
+        private DelegateText DelProgram, DelLastName, DelFirstName, DelMiddleName, DelAddress;
 
-       
+
+
+        private DelegateNumber DelNumAge, DelNumContactNo, DelStudNo;
+
 
 
         public FrmRegistration()
@@ -29,7 +33,7 @@ namespace zander
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+         
         }
 
         private void buttonSubmit_Click(object sender, EventArgs e)
@@ -66,6 +70,7 @@ namespace zander
         private void button1_Click(object sender, EventArgs e)
         {
          
+  
 
             StudentInfoClass.FirstName = txtboxFirst.Text;
             StudentInfoClass.LastName = txtboxLast.Text;
@@ -89,6 +94,11 @@ namespace zander
         }
 
         private void txtboxLast_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxProg_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmRegistration));
-            this.Student = new System.Windows.Forms.Label();
-            this.Program = new System.Windows.Forms.Label();
+            this.labelStudent = new System.Windows.Forms.Label();
+            this.labelProgram = new System.Windows.Forms.Label();
             this.labelContact = new System.Windows.Forms.Label();
             this.labelAge = new System.Windows.Forms.Label();
-            this.MiddleName = new System.Windows.Forms.Label();
-            this.FirstName = new System.Windows.Forms.Label();
+            this.labelMiddleName = new System.Windows.Forms.Label();
+            this.labelFirstName = new System.Windows.Forms.Label();
             this.LastName = new System.Windows.Forms.Label();
             this.labelAddress = new System.Windows.Forms.Label();
             this.txtboxStud = new System.Windows.Forms.MaskedTextBox();
@@ -48,32 +48,32 @@
             this.comboBoxProg = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
-            // Student
+            // labelStudent
             // 
-            this.Student.AutoSize = true;
-            this.Student.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Student.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Student.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.Student.Location = new System.Drawing.Point(49, 71);
-            this.Student.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Student.Name = "Student";
-            this.Student.Size = new System.Drawing.Size(166, 27);
-            this.Student.TabIndex = 0;
-            this.Student.Text = " Student No. : ";
-            this.Student.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.Student.Click += new System.EventHandler(this.label1_Click);
+            this.labelStudent.AutoSize = true;
+            this.labelStudent.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.labelStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelStudent.Location = new System.Drawing.Point(49, 71);
+            this.labelStudent.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelStudent.Name = "labelStudent";
+            this.labelStudent.Size = new System.Drawing.Size(166, 27);
+            this.labelStudent.TabIndex = 0;
+            this.labelStudent.Text = " Student No. : ";
+            this.labelStudent.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.labelStudent.Click += new System.EventHandler(this.label1_Click);
             // 
-            // Program
+            // labelProgram
             // 
-            this.Program.AutoSize = true;
-            this.Program.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.Program.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.Program.Location = new System.Drawing.Point(496, 71);
-            this.Program.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.Program.Name = "Program";
-            this.Program.Size = new System.Drawing.Size(143, 27);
-            this.Program.TabIndex = 1;
-            this.Program.Text = "PROGRAM :";
+            this.labelProgram.AutoSize = true;
+            this.labelProgram.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelProgram.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelProgram.Location = new System.Drawing.Point(496, 71);
+            this.labelProgram.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelProgram.Name = "labelProgram";
+            this.labelProgram.Size = new System.Drawing.Size(143, 27);
+            this.labelProgram.TabIndex = 1;
+            this.labelProgram.Text = "PROGRAM :";
             // 
             // labelContact
             // 
@@ -99,30 +99,30 @@
             this.labelAge.TabIndex = 5;
             this.labelAge.Text = " Age :";
             // 
-            // MiddleName
+            // labelMiddleName
             // 
-            this.MiddleName.AutoSize = true;
-            this.MiddleName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.MiddleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.MiddleName.Location = new System.Drawing.Point(610, 212);
-            this.MiddleName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.MiddleName.Name = "MiddleName";
-            this.MiddleName.Size = new System.Drawing.Size(151, 27);
-            this.MiddleName.TabIndex = 4;
-            this.MiddleName.Text = "Middle Name";
+            this.labelMiddleName.AutoSize = true;
+            this.labelMiddleName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelMiddleName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelMiddleName.Location = new System.Drawing.Point(610, 212);
+            this.labelMiddleName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelMiddleName.Name = "labelMiddleName";
+            this.labelMiddleName.Size = new System.Drawing.Size(151, 27);
+            this.labelMiddleName.TabIndex = 4;
+            this.labelMiddleName.Text = "Middle Name";
             // 
-            // FirstName
+            // labelFirstName
             // 
-            this.FirstName.AutoSize = true;
-            this.FirstName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.FirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
-            this.FirstName.Location = new System.Drawing.Point(304, 212);
-            this.FirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.FirstName.Name = "FirstName";
-            this.FirstName.Size = new System.Drawing.Size(142, 27);
-            this.FirstName.TabIndex = 5;
-            this.FirstName.Text = " First Name ";
-            this.FirstName.Click += new System.EventHandler(this.FirstName_Click);
+            this.labelFirstName.AutoSize = true;
+            this.labelFirstName.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.labelFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(177)));
+            this.labelFirstName.Location = new System.Drawing.Point(304, 212);
+            this.labelFirstName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelFirstName.Name = "labelFirstName";
+            this.labelFirstName.Size = new System.Drawing.Size(142, 27);
+            this.labelFirstName.TabIndex = 5;
+            this.labelFirstName.Text = " First Name ";
+            this.labelFirstName.Click += new System.EventHandler(this.FirstName_Click);
             // 
             // LastName
             // 
@@ -238,6 +238,7 @@
             this.comboBoxProg.Name = "comboBoxProg";
             this.comboBoxProg.Size = new System.Drawing.Size(363, 21);
             this.comboBoxProg.TabIndex = 446;
+            this.comboBoxProg.SelectedIndexChanged += new System.EventHandler(this.comboBoxProg_SelectedIndexChanged);
             // 
             // FrmRegistration
             // 
@@ -259,12 +260,12 @@
             this.Controls.Add(this.txtboxStud);
             this.Controls.Add(this.labelAddress);
             this.Controls.Add(this.LastName);
-            this.Controls.Add(this.FirstName);
-            this.Controls.Add(this.MiddleName);
+            this.Controls.Add(this.labelFirstName);
+            this.Controls.Add(this.labelMiddleName);
             this.Controls.Add(this.labelAge);
             this.Controls.Add(this.labelContact);
-            this.Controls.Add(this.Program);
-            this.Controls.Add(this.Student);
+            this.Controls.Add(this.labelProgram);
+            this.Controls.Add(this.labelStudent);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
@@ -281,12 +282,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Label Student;
-        private System.Windows.Forms.Label Program;
+        private System.Windows.Forms.Label labelStudent;
+        private System.Windows.Forms.Label labelProgram;
         private System.Windows.Forms.Label labelContact;
         private System.Windows.Forms.Label labelAge;
-        private System.Windows.Forms.Label MiddleName;
-        private System.Windows.Forms.Label FirstName;
+        private System.Windows.Forms.Label labelMiddleName;
+        private System.Windows.Forms.Label labelFirstName;
         private System.Windows.Forms.Label LastName;
         private System.Windows.Forms.Label labelAddress;
         private System.Windows.Forms.MaskedTextBox txtboxStud;
